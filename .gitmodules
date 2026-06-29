@@ -1,0 +1,3 @@
+[submodule "rheo-swiftui"]
+	path = rheo-swiftui
+	url = https://github.com/getrheo/rheo-swiftui.git

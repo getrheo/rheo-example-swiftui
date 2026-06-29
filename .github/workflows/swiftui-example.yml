@@ -1,0 +1,28 @@
+name: SwiftUI example
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  swiftui-example:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Pin SDK submodule
+        run: |
+          cd rheo-swiftui
+          git fetch --tags origin
+          git checkout swiftui-v2.0.2
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8.15.9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
