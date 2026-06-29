@@ -1,0 +1,27 @@
+{
+  "name": "rheo-example-swiftui",
+  "private": true,
+  "packageManager": "pnpm@8.15.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "build": "node scripts/run-swiftui-example.mjs build",
+    "run": "node scripts/run-swiftui-example.mjs run",
+    "open": "open Package.swift",
+    "verify": "node scripts/check-no-platform-contracts.mjs"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.6",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "typescript-eslint": "^8.59.0",
+    "typescript": "^5.6.3",
+    "tsup": "^8.5.1"
+  },
+  "description": "SwiftUI example app for RheoSwiftUI — config form + FlowView against the Rheo API"
+}

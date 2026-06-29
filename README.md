@@ -1,24 +1,16 @@
 # rheo-example-swiftui
 
-Runnable SwiftUI example app for RheoSwiftUI.
+Runnable SwiftUI example for **RheoSwiftUI** (config screen + `FlowView`).
 
-> **Status:** Scaffolded for the Rheo SDK open-source migration. Source extraction lands in Phase 3; install published packages from npm today.
+**SDK repo:** [getrheo/rheo-swiftui](https://github.com/getrheo/rheo-swiftui) (pinned via git submodule at `swiftui-v2.0.2`)
 
-## Packages
+```bash
+git clone --recurse-submodules https://github.com/getrheo/rheo-example-swiftui.git
+cd rheo-example-swiftui
+pnpm install
+pnpm build
+```
 
-_No npm packages — see release tags in this repository._
+Or open `Package.swift` in Xcode and run on an iOS simulator.
 
-Example app only — SwiftPM; pins getrheo/rheo-swiftui via submodule.
-
-## Documentation
-
-- [Developer guide](https://docs.getrheo.io/docs/developer-guide/sdk-swiftui)
-- [SDK overview](https://docs.getrheo.io/docs/developer-guide/sdk)
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md). Issues and pull requests are welcome once CI is wired.
-
-## License
-
-[MIT](./LICENSE)
+[SDK docs](https://docs.getrheo.io/docs/developer-guide/sdk-swiftui)
