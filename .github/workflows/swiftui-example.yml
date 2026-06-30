@@ -16,7 +16,7 @@ jobs:
         run: |
           cd rheo-swiftui
           git fetch --tags origin
-          git checkout swiftui-v2.0.2
+          git checkout swiftui-v2.0.3
       - uses: pnpm/action-setup@v4
         with:
           version: 8.15.9
