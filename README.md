@@ -16,7 +16,7 @@ pnpm run      # build, install, and launch on a simulator
 
 Or open `Package.swift` in Xcode, select the **RheoExampleSwiftUI** scheme, and run on an iPhone simulator.
 
-The SDK is pinned via git submodule [`rheo-swiftui`](https://github.com/getrheo/rheo-swiftui) at `swiftui-v2.0.3`.
+The SDK is pinned via git submodule [`rheo-swiftui`](https://github.com/getrheo/rheo-swiftui) at `swiftui-v2.1.0`.
 
 The config screen defaults to **`https://api.getrheo.io`**. Use `http://127.0.0.1:4000` when testing against a local API.
 
